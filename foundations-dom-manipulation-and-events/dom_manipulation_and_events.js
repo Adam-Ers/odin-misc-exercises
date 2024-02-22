@@ -29,3 +29,21 @@ divContainerp.innerText = "ME TOO!"
 divContainer.appendChild(divContainerp);
 
 container.appendChild(divContainer);
+
+// Event stuff
+
+const btn = document.querySelector('#btn');
+btn.addEventListener('click', e => 
+{
+    alert("Hello, world?");
+    console.log(e);
+    console.log(e.target);
+    e.target.style.backgroundColor = 'blue';
+});
+
+const buttons = document.querySelectorAll('#buttonContainer > button');
+
+buttons.forEach( button =>
+    {
+        button.addEventListener('click', () => { alert(`This button is ID: ${button.id}`); })
+    });
