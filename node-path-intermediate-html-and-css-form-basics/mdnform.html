@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form class="part1" action="./mdnform.html" method="post">
+        <ul class="part1">
+            <li class="part1">
+                <label class="part1" for="name">Name:</label>
+                <input class="part1" type="text" name="userName" id="name">
+            </li>
+            <li class="part1">
+                <label class="part1" for="email">E-Mail:</label>
+                <input class="part1" type="email" name="userEmail" id="email">
+            </li>
+            <li class="part1">
+                <label class="part1" for="message">Message:</label>
+                <textarea class="part1" name="userMessage" id="message" rows="10"></textarea>
+            </li>
+            <li class="part1">
+                <button class="part1" type="submit">Send Your Message </button>
+            </li>
+        </ul>
+    </form>
+    <form action="./mdnform.html" method="post" class="part2">
+        <h1 class="part2" class="part2">Payment Form</h1>
+        <p class="part2">
+            <span>Required fields are followed by <strong><span aria-label="required">*</span></strong></span>
+        </p>
+        <section class="part2">
+            <h2 class="part2">Contact Information</h2>
+            <fieldset>
+                <legend>Title</legend>
+                <ul class="part2">
+                    <li class="part2">
+                        <label class="part2" for="title1">
+                            <input type="radio" name="title" id="title1" value="A">
+                            Ace
+                        </label>
+                    </li>
+                    <li class="part2">
+                        <label class="part2" for="title2">
+                            <input type="radio" name="title" id="title2" value="K">
+                            King
+                        </label>
+                    </li>
+                    <li class="part2">
+                        <label class="part2" for="title3">
+                            <input type="radio" name="title" id="title3" value="Q">
+                            Queen
+                        </label>
+                    </li>
+                </ul>
+            </fieldset>
+            <p class="part2">
+                <label for="name">
+                    <span>Name: </span>
+                    <strong><span aria-label="required">*</span></strong>
+                </label>
+                <input class="part2" type="text" id="name" name="username" required />
+            </p>
+            <p class="part2">
+                <label class="part2" for="mail">
+                    <span>Email: </span>
+                    <strong><span aria-label="required">*</span></strong>
+                </label>
+                <input class="part2" type="email" id="mail" name="usermail" required />
+            </p>
+            <p class="part2">
+                <label class="part2" for="pwd">
+                    <span>Password: </span>
+                    <strong><span aria-label="required">*</span></strong>
+                </label>
+                <input class="part2" type="password" id="pwd" name="password" required />
+            </p>
+        </section> 
+        <section class="part2">
+            <h2 class="part2">Payment information</h2>
+            <p class="part2">
+                <label for="card" class="part2">
+                    <span>Card type:</span>
+                </label>
+                <select class="part2" id="card" name="usercard">
+                    <option value="visa">Visa</option>
+                    <option value="mc">Mastercard</option>
+                    <option value="amex">American Express</option>
+                </select>
+            </p>
+            <p class="part2">
+                <label class="part2" for="number">
+                    <span>Card number:</span>
+                    <strong><span aria-label="required">*</span></strong>
+                </label>
+                <input class="part2" type="tel" id="number" name="cardnumber" required />
+            </p>
+            <p class="part2">
+                <label class="part2" for="expiration">
+                    <span>Expiration date:</span>
+                    <strong><span aria-label="required">*</span></strong>
+                </label>
+                <input class="part2" type="text" id="expiration" name="expiration" required placeholder="MM/YY"
+                    pattern="^(0[1-9]|1[0-2])\/([0-9]{2})$" />
+            </p>
+        </section>
+        <section>
+            <p class="part2">
+                <button class="part2" type="submit">Validate the payment</button>
+            </p>
+        </section>
+    </form>
+</body>
+</html>
